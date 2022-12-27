@@ -426,7 +426,16 @@
 
           <div class="modal-form-item">
             <label class="modal-form-label" for="name">Name</label>
-            <input class="modal-form-input" type="text" name="name" id="name" />
+
+            <div class="div-relative">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="name"
+                id="name"
+              />
+              <span class="modal-form-icon"> </span>
+            </div>
           </div>
 
           <div class="modal-form-item">
@@ -457,16 +466,18 @@
               name="comment"
               id="comment"
               rows="10"
-            ></textarea>
+            >
+            </textarea>
           </div>
 
           <input type="checkbox" name="" id="checkbox" />
-          <label for="checkbox"
+          <label for="checkbox" class="label-accept"
             >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
+            <a class="label-accept-link" href="">Privacy Policy</a>
           </label>
-
-          <button type="button">Send</button>
+          <div class="parent_button">
+            <button type="button" class="btn-modal-send">Send</button>
+          </div>
         </form>
       </div>
     </div>
