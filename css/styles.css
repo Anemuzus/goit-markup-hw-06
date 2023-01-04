@@ -975,6 +975,10 @@ font-weight: 400;
         letter-spacing: 0.04em;
     
         color: #757575;
+
+        display: flex;
+        
+       
 }
 
 
@@ -1106,3 +1110,27 @@ font-size: 12px;
     fill: #4D5AE5;
 }
 
+.checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox-custom{
+    
+    display: inline-block;
+    width: 16px;
+        height: 16px;
+     border: 1.25px solid #2E2F42;
+        border-radius: 2px;
+        margin-right: 8px;
+}
+
+.checkbox:checked + .checkbox-custom{
+    background: #4D5AE5;
+    background-image: url(../images/Property\ 1=click.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
+}
